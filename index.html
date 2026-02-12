@@ -39,6 +39,27 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem}
 .tag{background:var(--tag);color:var(--muted);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;text-transform:uppercase;letter-spacing:.3px}
 
+/* Progress tracker */
+.progress-bar{max-width:900px;margin:.75rem auto;padding:0 1rem}
+.progress-summary{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.progress-summary .stat{font-size:.85rem;color:var(--muted)}
+.progress-summary .stat strong{color:var(--text)}
+.progress-meter{flex:1;min-width:200px;height:8px;background:var(--border);border-radius:4px;overflow:hidden;display:flex}
+.progress-meter .seg-learning{background:#f59e0b}
+.progress-meter .seg-landed{background:#3b82f6}
+.progress-meter .seg-mastered{background:#10b981}
+.progress-btns{display:flex;gap:.3rem;margin-top:.5rem}
+.progress-btn{background:var(--tag);border:1px solid var(--border);color:var(--muted);padding:.2rem .5rem;border-radius:4px;font-size:.7rem;cursor:pointer;text-transform:uppercase;letter-spacing:.3px;transition:all .15s}
+.progress-btn:hover{border-color:var(--accent)}
+.progress-btn.active-learning{background:#f59e0b22;border-color:#f59e0b;color:#f59e0b}
+.progress-btn.active-landed{background:#3b82f622;border-color:#3b82f6;color:#3b82f6}
+.progress-btn.active-mastered{background:#10b98122;border-color:#10b981;color:#10b981}
+.card .progress-badge{position:absolute;top:.75rem;right:.75rem;font-size:.65rem;padding:.15rem .4rem;border-radius:3px;text-transform:uppercase;font-weight:700;letter-spacing:.3px}
+.card{position:relative}
+.badge-learning{background:#f59e0b22;color:#f59e0b}
+.badge-landed{background:#3b82f622;color:#3b82f6}
+.badge-mastered{background:#10b98122;color:#10b981}
+
 /* Modal */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;justify-content:center;align-items:center;padding:1rem}
 .modal-overlay.active{display:flex}
@@ -99,7 +120,9 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem;b
     <input type="text" id="search" placeholder="Search tricks..." autocomplete="off">
     <select id="catFilter"><option value="">All Categories</option></select>
     <select id="diffFilter"><option value="">All Difficulties</option></select>
+  <select id="progressFilter"><option value="">All Progress</option><option value="none">Not Started</option><option value="learning">🟡 Learning</option><option value="landed">🔵 Landed</option><option value="mastered">🟢 Mastered</option></select>
   </div>
+  <div class="progress-bar" id="progressBar"></div>
   <div class="stats" id="stats"></div>
   <div class="grid" id="grid"></div>
 </div>
@@ -125,12 +148,55 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem;b
 let tricks = [];
 let currentView = 'grid';
 
+// Progress tracker
+function getProgress() { try { return JSON.parse(localStorage.getItem('trickdex-progress') || '{}'); } catch { return {}; } }
+function setProgress(id, level) {
+  const p = getProgress();
+  if (level) p[id] = level; else delete p[id];
+  localStorage.setItem('trickdex-progress', JSON.stringify(p));
+  render();
+  renderProgressBar();
+}
+function renderProgressBar() {
+  const p = getProgress();
+  const total = tricks.length;
+  const counts = { learning: 0, landed: 0, mastered: 0 };
+  Object.values(p).forEach(v => { if (counts[v] !== undefined) counts[v]++; });
+  const pct = v => total ? (v / total * 100).toFixed(1) : 0;
+  document.getElementById('progressBar').innerHTML = `<div class="progress-summary">
+    <span class="stat">📊 <strong>${counts.learning}</strong> Learning · <strong>${counts.landed}</strong> Landed · <strong>${counts.mastered}</strong> Mastered</span>
+    <div class="progress-meter">
+      <div class="seg-mastered" style="width:${pct(counts.mastered)}%"></div>
+      <div class="seg-landed" style="width:${pct(counts.landed)}%"></div>
+      <div class="seg-learning" style="width:${pct(counts.learning)}%"></div>
+    </div>
+    <span class="stat"><strong>${counts.mastered}</strong>/${total} mastered</span>
+  </div>`;
+}
+function progressBtns(trickId, size) {
+  const p = getProgress();
+  const cur = p[trickId] || '';
+  const levels = ['learning','landed','mastered'];
+  const labels = {learning:'🟡 Learning',landed:'🔵 Landed',mastered:'🟢 Mastered'};
+  return `<div class="progress-btns">${levels.map(l =>
+    `<button class="progress-btn${cur===l?' active-'+l:''}" onclick="event.stopPropagation();setProgress('${trickId}','${cur===l?'':l}')">${labels[l]}</button>`
+  ).join('')}</div>`;
+}
+function progressBadge(trickId) {
+  const p = getProgress();
+  const cur = p[trickId];
+  if (!cur) return '';
+  const labels = {learning:'Learning',landed:'Landed',mastered:'Mastered'};
+  return `<span class="progress-badge badge-${cur}">${labels[cur]}</span>`;
+}
+
 async function init() {
   const res = await fetch('data/tricks.json');
   tricks = await res.json();
   populateFilters();
   render();
   buildFullTree();
+  renderProgressBar();
 }
 
 function populateFilters() {
@@ -146,11 +212,15 @@ function render() {
   const q = document.getElementById('search').value.toLowerCase();
   const cat = document.getElementById('catFilter').value;
   const diff = document.getElementById('diffFilter').value;
+  const prog = document.getElementById('progressFilter').value;
+  const progress = getProgress();
 
   const filtered = tricks.filter(t => {
     if (q && !t.name.toLowerCase().includes(q) && !t.description.toLowerCase().includes(q) && !t.tags.some(tag => tag.includes(q))) return false;
     if (cat && t.category !== cat) return false;
     if (diff && t.difficulty !== parseInt(diff)) return false;
+    if (prog === 'none' && progress[t.id]) return false;
+    if (prog && prog !== 'none' && progress[t.id] !== prog) return false;
     return true;
   });
 
@@ -159,6 +229,7 @@ function render() {
   const grid = document.getElementById('grid');
   grid.innerHTML = filtered.map(t => `
     <div class="card" onclick="openModal('${t.id}')">
+      ${progressBadge(t.id)}
       <div class="card-head">
         <h2>${t.name}</h2>
         <span class="cat">${t.category}</span>
@@ -166,6 +237,7 @@ function render() {
       <div class="difficulty">${Array.from({length:10},(_,i)=>`<div class="dot${i<t.difficulty?' active':''}"></div>`).join('')}</div>
       <p class="desc">${t.description}</p>
       <div class="tags">${t.tags.map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+      ${progressBtns(t.id)}
     </div>
   `).join('');
 }
@@ -196,6 +268,7 @@ function openModal(id) {
     <div class="section"><h3>Tips</h3><ul>${t.tips.map(tip=>`<li>${tip}</li>`).join('')}</ul></div>
     <div class="section"><h3>Stance</h3><p>${t.stance.join(', ')}</p></div>
     <div class="tags">${t.tags.map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+    <div class="section"><h3>Your Progress</h3>${progressBtns(t.id)}</div>
   `;
 
   document.getElementById('modal').classList.add('active');
@@ -234,6 +307,7 @@ function buildBranch(trick) {
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('catFilter').addEventListener('change', render);
 document.getElementById('diffFilter').addEventListener('change', render);
+document.getElementById('progressFilter').addEventListener('change', render);
 
 init();
 </script>

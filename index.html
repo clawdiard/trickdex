@@ -189,6 +189,7 @@ function openModal(id) {
     <div class="meta">${t.category} · Difficulty ${t.difficulty}/10${meta ? ' · ' + meta : ''}</div>
     <div class="difficulty">${Array.from({length:10},(_,i)=>`<div class="dot${i<t.difficulty?' active':''}"></div>`).join('')}</div>
 
+    ${t.videoId ? `<div class="section"><h3>📹 Video Tutorial</h3><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin-top:.5rem"><iframe src="https://www.youtube.com/embed/${t.videoId}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" allowfullscreen loading="lazy"></iframe></div></div>` : ''}
     <div class="section"><h3>Description</h3><p>${t.description}</p></div>
     <div class="section"><h3>Prerequisites</h3><p>${prereqs}</p></div>
     <div class="section"><h3>Unlocks</h3><p>${unlocksHtml}</p></div>

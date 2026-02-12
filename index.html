@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrickDex — The Skateboarding Trick Encyclopedia</title>
+<meta name="description" content="Browse 30+ skateboarding tricks with difficulty ratings, prerequisites, tips, and trick trees. Free, open-source, no sign-up.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛹</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0a;--card:#161616;--border:#2a2a2a;--text:#e0e0e0;--muted:#888;--accent:#ff6b35;--accent2:#ffd166;--green:#4ecdc4;--tag:#222}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+
+.header{text-align:center;padding:2.5rem 1rem 1.5rem;border-bottom:1px solid var(--border)}
+.header h1{font-size:2.5rem;font-weight:800;letter-spacing:-1px}
+.header h1 span{color:var(--accent)}
+.header p{color:var(--muted);margin-top:.3rem;font-size:1.05rem}
+
+.controls{max-width:900px;margin:1.5rem auto;padding:0 1rem;display:flex;gap:.75rem;flex-wrap:wrap}
+.controls input,.controls select{background:var(--card);border:1px solid var(--border);color:var(--text);padding:.6rem 1rem;border-radius:8px;font-size:.95rem;outline:none}
+.controls input:focus,.controls select:focus{border-color:var(--accent)}
+.controls input{flex:1;min-width:200px}
+.controls select{min-width:140px}
+
+.stats{max-width:900px;margin:0 auto .5rem;padding:0 1rem;color:var(--muted);font-size:.85rem}
+
+.grid{max-width:900px;margin:0 auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem;cursor:pointer;transition:border-color .2s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.5rem}
+.card h2{font-size:1.15rem;font-weight:700}
+.card .cat{font-size:.75rem;color:var(--green);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.difficulty{display:flex;gap:2px;margin:.4rem 0}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.dot.active{background:var(--accent)}
+.card .desc{color:var(--muted);font-size:.88rem;margin:.5rem 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem}
+.tag{background:var(--tag);color:var(--muted);padding:.15rem .5rem;border-radius:4px;font-size:.72rem;text-transform:uppercase;letter-spacing:.3px}
+
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;justify-content:center;align-items:center;padding:1rem}
+.modal-overlay.active{display:flex}
+.modal{background:var(--card);border:1px solid var(--border);border-radius:16px;max-width:600px;width:100%;max-height:90vh;overflow-y:auto;padding:2rem;position:relative}
+.modal .close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer}
+.modal .close:hover{color:var(--text)}
+.modal h2{font-size:1.6rem;margin-bottom:.25rem}
+.modal .meta{color:var(--muted);font-size:.9rem;margin-bottom:1rem}
+.modal .section{margin:1rem 0}
+.modal .section h3{font-size:.85rem;text-transform:uppercase;color:var(--accent);letter-spacing:.5px;margin-bottom:.4rem}
+.modal .section p,.modal .section li{font-size:.95rem;color:var(--text)}
+.modal ul{padding-left:1.2rem}
+.modal li{margin:.3rem 0}
+.prereq-link{color:var(--accent2);cursor:pointer;font-weight:600}
+.prereq-link:hover{text-decoration:underline}
+
+/* Tree view */
+.tree-container{margin-top:.75rem}
+.tree-node{position:relative;padding-left:1.5rem;margin:.2rem 0}
+.tree-node::before{content:'';position:absolute;left:.5rem;top:0;bottom:0;width:1px;background:var(--border)}
+.tree-node::after{content:'';position:absolute;left:.5rem;top:.75rem;width:.75rem;height:1px;background:var(--border)}
+.tree-label{display:inline-block;background:var(--tag);padding:.15rem .6rem;border-radius:4px;font-size:.85rem;cursor:pointer;color:var(--accent2)}
+.tree-label:hover{background:var(--border)}
+.tree-label.current{color:var(--accent);font-weight:700;background:var(--border)}
+
+.view-toggle{max-width:900px;margin:0 auto;padding:0 1rem;display:flex;gap:.5rem}
+.view-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);padding:.4rem .8rem;border-radius:6px;cursor:pointer;font-size:.85rem}
+.view-btn.active{border-color:var(--accent);color:var(--accent)}
+
+/* Tree page */
+.tree-page{max-width:900px;margin:1rem auto;padding:0 1rem;display:none}
+.tree-page.active{display:block}
+.tree-page h2{margin-bottom:1rem;font-size:1.3rem}
+.full-tree{font-size:.9rem}
+.full-tree details{margin-left:1.2rem;margin-top:.25rem}
+.full-tree summary{cursor:pointer;padding:.2rem .4rem;border-radius:4px;color:var(--text)}
+.full-tree summary:hover{background:var(--tag)}
+.full-tree .leaf{margin-left:1.2rem;padding:.2rem .4rem;color:var(--muted)}
+.full-tree .diff{color:var(--accent);font-size:.8rem;margin-left:.3rem}
+
+footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🛹 Trick<span>Dex</span></h1>
+  <p>The skateboarding trick encyclopedia — 30+ tricks, difficulty ratings, prerequisites & tips</p>
+</div>
+
+<div class="view-toggle">
+  <button class="view-btn active" onclick="showView('grid')">📋 Browse</button>
+  <button class="view-btn" onclick="showView('tree')">🌳 Trick Tree</button>
+</div>
+
+<div id="gridView">
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search tricks..." autocomplete="off">
+    <select id="catFilter"><option value="">All Categories</option></select>
+    <select id="diffFilter"><option value="">All Difficulties</option></select>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="tree-page" id="treeView">
+  <h2>🌳 Trick Prerequisite Tree</h2>
+  <p style="color:var(--muted);margin-bottom:1rem;font-size:.9rem">See how tricks build on each other. Click any trick to view details.</p>
+  <div class="full-tree" id="fullTree"></div>
+</div>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">&times;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <p>TrickDex — Open source on <a href="https://github.com/clawdiard/trickdex">GitHub</a>. Built with 🤙 by <a href="https://github.com/clawdiard">Clawdia</a>.</p>
+</footer>
+
+<script>
+let tricks = [];
+let currentView = 'grid';
+
+async function init() {
+  const res = await fetch('data/tricks.json');
+  tricks = await res.json();
+  populateFilters();
+  render();
+  buildFullTree();
+}
+
+function populateFilters() {
+  const cats = [...new Set(tricks.map(t => t.category))].sort();
+  const catSel = document.getElementById('catFilter');
+  cats.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; catSel.appendChild(o); });
+
+  const diffSel = document.getElementById('diffFilter');
+  for (let i = 1; i <= 10; i++) { const o = document.createElement('option'); o.value = i; o.textContent = `${'★'.repeat(i)} (${i}/10)`; diffSel.appendChild(o); }
+}
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const cat = document.getElementById('catFilter').value;
+  const diff = document.getElementById('diffFilter').value;
+
+  const filtered = tricks.filter(t => {
+    if (q && !t.name.toLowerCase().includes(q) && !t.description.toLowerCase().includes(q) && !t.tags.some(tag => tag.includes(q))) return false;
+    if (cat && t.category !== cat) return false;
+    if (diff && t.difficulty !== parseInt(diff)) return false;
+    return true;
+  });
+
+  document.getElementById('stats').textContent = `Showing ${filtered.length} of ${tricks.length} tricks`;
+
+  const grid = document.getElementById('grid');
+  grid.innerHTML = filtered.map(t => `
+    <div class="card" onclick="openModal('${t.id}')">
+      <div class="card-head">
+        <h2>${t.name}</h2>
+        <span class="cat">${t.category}</span>
+      </div>
+      <div class="difficulty">${Array.from({length:10},(_,i)=>`<div class="dot${i<t.difficulty?' active':''}"></div>`).join('')}</div>
+      <p class="desc">${t.description}</p>
+      <div class="tags">${t.tags.map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+    </div>
+  `).join('');
+}
+
+function openModal(id) {
+  const t = tricks.find(x => x.id === id);
+  if (!t) return;
+
+  const prereqs = t.prerequisites.map(pid => {
+    const p = tricks.find(x => x.id === pid);
+    return p ? `<span class="prereq-link" onclick="openModal('${p.id}')">${p.name}</span>` : pid;
+  }).join(', ') || 'None (starter trick)';
+
+  const unlocks = tricks.filter(x => x.prerequisites.includes(t.id));
+  const unlocksHtml = unlocks.length ? unlocks.map(u => `<span class="prereq-link" onclick="openModal('${u.id}')">${u.name}</span>`).join(', ') : 'End of this branch';
+
+  const meta = [t.inventor && `Invented by ${t.inventor}`, t.year && `(${t.year})`].filter(Boolean).join(' ');
+
+  document.getElementById('modalContent').innerHTML = `
+    <h2>${t.name}</h2>
+    <div class="meta">${t.category} · Difficulty ${t.difficulty}/10${meta ? ' · ' + meta : ''}</div>
+    <div class="difficulty">${Array.from({length:10},(_,i)=>`<div class="dot${i<t.difficulty?' active':''}"></div>`).join('')}</div>
+
+    <div class="section"><h3>Description</h3><p>${t.description}</p></div>
+    <div class="section"><h3>Prerequisites</h3><p>${prereqs}</p></div>
+    <div class="section"><h3>Unlocks</h3><p>${unlocksHtml}</p></div>
+    <div class="section"><h3>Tips</h3><ul>${t.tips.map(tip=>`<li>${tip}</li>`).join('')}</ul></div>
+    <div class="section"><h3>Stance</h3><p>${t.stance.join(', ')}</p></div>
+    <div class="tags">${t.tags.map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+  `;
+
+  document.getElementById('modal').classList.add('active');
+}
+
+function closeModal() { document.getElementById('modal').classList.remove('active'); }
+document.getElementById('modal').addEventListener('click', e => { if (e.target.classList.contains('modal-overlay')) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function showView(view) {
+  currentView = view;
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.view-btn[onclick="showView('${view}')"]`).classList.add('active');
+  document.getElementById('gridView').style.display = view === 'grid' ? '' : 'none';
+  document.getElementById('treeView').classList.toggle('active', view === 'tree');
+}
+
+function buildFullTree() {
+  const roots = tricks.filter(t => t.prerequisites.length === 0);
+  const container = document.getElementById('fullTree');
+  container.innerHTML = roots.map(r => buildBranch(r)).join('');
+}
+
+function buildBranch(trick) {
+  const children = tricks.filter(t => t.prerequisites.includes(trick.id));
+  const diff = `<span class="diff">${'★'.repeat(trick.difficulty)}</span>`;
+  if (children.length === 0) {
+    return `<div class="leaf"><span class="prereq-link" onclick="openModal('${trick.id}')">${trick.name}</span> ${diff}</div>`;
+  }
+  return `<details open>
+    <summary><span class="prereq-link" onclick="event.stopPropagation();openModal('${trick.id}')">${trick.name}</span> ${diff}</summary>
+    ${children.map(c => buildBranch(c)).join('')}
+  </details>`;
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('catFilter').addEventListener('change', render);
+document.getElementById('diffFilter').addEventListener('change', render);
+
+init();
+</script>
+</body>
+</html>

@@ -175,8 +175,8 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.85rem;b
 </div>
 
 <div class="view-toggle">
-  <button class="view-btn active" onclick="showView('grid')">📋 Browse</button>
-  <button class="view-btn" onclick="showView('tree')">🌳 Trick Tree</button>
+  <button class="view-btn active" data-view="grid" onclick="showView('grid')">📋 Browse</button>
+  <button class="view-btn" data-view="tree" onclick="showView('tree')">🌳 Trick Tree</button>
 </div>
 
 <div id="gridView">
@@ -356,8 +356,9 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 function showView(view) {
   currentView = view;
-  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.view-btn[onclick="showView('${view}')"]`).classList.add('active');
+  document.querySelectorAll('.view-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view);
+  });
   document.getElementById('gridView').style.display = view === 'grid' ? '' : 'none';
   document.getElementById('treeView').classList.toggle('active', view === 'tree');
 }

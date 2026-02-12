@@ -13,7 +13,7 @@
     "year": 1978,
     "tips": [
       "Start stationary before trying while rolling",
-      "Slide your front foot \u2014 don't just jump",
+      "Slide your front foot — don't just jump",
       "Timing the pop and slide is everything"
     ],
     "tags": [
@@ -28,7 +28,7 @@
     "name": "Kickflip",
     "category": "Flatground",
     "difficulty": 3,
-    "description": "An ollie with a flick off the heelside edge of the nose, causing the board to flip 360\u00b0 along its length.",
+    "description": "An ollie with a flick off the heelside edge of the nose, causing the board to flip 360° along its length.",
     "prerequisites": [
       "ollie"
     ],
@@ -39,7 +39,7 @@
     "year": 1983,
     "tips": [
       "Front foot angled slightly off the edge",
-      "Flick is subtle \u2014 more ankle than leg",
+      "Flick is subtle — more ankle than leg",
       "Catch it with your back foot first"
     ],
     "tags": [
@@ -80,7 +80,7 @@
     "name": "Pop Shove-It",
     "category": "Flatground",
     "difficulty": 2,
-    "description": "The board rotates 180\u00b0 beneath you (backside) while you stay facing the same direction.",
+    "description": "The board rotates 180° beneath you (backside) while you stay facing the same direction.",
     "prerequisites": [
       "ollie"
     ],
@@ -92,7 +92,7 @@
     "tips": [
       "Scoop the tail backward with your back foot",
       "Keep your weight centered",
-      "Don't jump too high \u2014 let the board spin under you"
+      "Don't jump too high — let the board spin under you"
     ],
     "tags": [
       "shuvit",
@@ -106,7 +106,7 @@
     "name": "Frontside Pop Shove-It",
     "category": "Flatground",
     "difficulty": 2,
-    "description": "The board rotates 180\u00b0 frontside beneath you. Opposite rotation of a regular (backside) pop shove-it.",
+    "description": "The board rotates 180° frontside beneath you. Opposite rotation of a regular (backside) pop shove-it.",
     "prerequisites": [
       "ollie"
     ],
@@ -131,7 +131,7 @@
     "name": "360 Flip (Tre Flip)",
     "category": "Flatground",
     "difficulty": 5,
-    "description": "A combination of a kickflip and a 360 pop shove-it. The board flips and rotates 360\u00b0 simultaneously. One of the most iconic tricks in skateboarding.",
+    "description": "A combination of a kickflip and a 360 pop shove-it. The board flips and rotates 360° simultaneously. One of the most iconic tricks in skateboarding.",
     "prerequisites": [
       "kickflip",
       "pop-shuvit"
@@ -142,7 +142,7 @@
     "inventor": "Rodney Mullen",
     "year": 1983,
     "tips": [
-      "Back foot does most of the work \u2014 big scoop",
+      "Back foot does most of the work — big scoop",
       "Front foot flicks lightly",
       "Let it come to you; don't chase it"
     ],
@@ -159,7 +159,7 @@
     "name": "Varial Kickflip",
     "category": "Flatground",
     "difficulty": 4,
-    "description": "A kickflip combined with a backside pop shove-it. The board flips and rotates 180\u00b0 simultaneously.",
+    "description": "A kickflip combined with a backside pop shove-it. The board flips and rotates 180° simultaneously.",
     "prerequisites": [
       "kickflip",
       "pop-shuvit"
@@ -224,7 +224,7 @@
     "inventor": "Daewon Song",
     "year": null,
     "tips": [
-      "The board goes between your legs \u2014 commit",
+      "The board goes between your legs — commit",
       "Strong frontside scoop",
       "Catch it early"
     ],
@@ -252,7 +252,7 @@
     "year": null,
     "tips": [
       "Scoop backside while flicking heel",
-      "Board comes inward \u2014 watch your shins",
+      "Board comes inward — watch your shins",
       "Commit fully"
     ],
     "tags": [
@@ -267,7 +267,7 @@
     "name": "Backside 180",
     "category": "Flatground",
     "difficulty": 2,
-    "description": "An ollie with a 180\u00b0 backside rotation of both you and the board.",
+    "description": "An ollie with a 180° backside rotation of both you and the board.",
     "prerequisites": [
       "ollie"
     ],
@@ -293,7 +293,7 @@
     "name": "Frontside 180",
     "category": "Flatground",
     "difficulty": 2,
-    "description": "An ollie with a 180\u00b0 frontside rotation. You and the board turn frontside together.",
+    "description": "An ollie with a 180° frontside rotation. You and the board turn frontside together.",
     "prerequisites": [
       "ollie"
     ],
@@ -330,9 +330,9 @@
     "inventor": "",
     "year": null,
     "tips": [
-      "Turn 90\u00b0 and center your weight over the rail",
+      "Turn 90° and center your weight over the rail",
       "Keep your knees bent",
-      "Turn out at the end \u2014 don't hang up"
+      "Turn out at the end — don't hang up"
     ],
     "tags": [
       "slide",
@@ -413,7 +413,7 @@
     "tips": [
       "Lean forward and lock the front truck",
       "Keep the tail up",
-      "Nollie out or turn 90\u00b0 to dismount"
+      "Nollie out or turn 90° to dismount"
     ],
     "tags": [
       "grind",
@@ -467,7 +467,7 @@
     "tips": [
       "Ollie high enough to clear the rail with your front truck",
       "Lock the back truck and lean in",
-      "Commit \u2014 half-attempts are dangerous"
+      "Commit — half-attempts are dangerous"
     ],
     "tags": [
       "grind",
@@ -545,7 +545,7 @@
     "inventor": "",
     "year": null,
     "tips": [
-      "Commit \u2014 leaning back = slamming",
+      "Commit — leaning back = slamming",
       "Stomp your front foot and lean in",
       "Start on small ramps"
     ],
@@ -572,7 +572,7 @@
     "inventor": "",
     "year": null,
     "tips": [
-      "Don't go too far over \u2014 just past the coping",
+      "Don't go too far over — just past the coping",
       "Lift the front slightly to clear the coping on the way back",
       "Keep weight centered"
     ],
@@ -598,7 +598,7 @@
     "inventor": "",
     "year": null,
     "tips": [
-      "Turn 90\u00b0 at the top",
+      "Turn 90° at the top",
       "Set both trucks on the coping",
       "Lean in to drop back"
     ],
@@ -642,7 +642,7 @@
     "name": "Manual",
     "category": "Flatground",
     "difficulty": 2,
-    "description": "Rolling on only the back two wheels \u2014 a wheelie on a skateboard.",
+    "description": "Rolling on only the back two wheels — a wheelie on a skateboard.",
     "prerequisites": [],
     "stance": [
       "Regular"
@@ -692,7 +692,7 @@
     "name": "Impossible",
     "category": "Flatground",
     "difficulty": 6,
-    "description": "The board wraps vertically around your back foot in a full 360\u00b0 rotation.",
+    "description": "The board wraps vertically around your back foot in a full 360° rotation.",
     "prerequisites": [
       "ollie",
       "pop-shuvit"
@@ -704,7 +704,7 @@
     "year": 1982,
     "tips": [
       "Scoop straight down and wrap it around your foot",
-      "Keep it vertical \u2014 a flat impossible isn't an impossible",
+      "Keep it vertical — a flat impossible isn't an impossible",
       "Back foot does all the work"
     ],
     "tags": [
@@ -733,7 +733,7 @@
     "tips": [
       "Strong frontside scoop with the back foot",
       "Heel flick needs perfect timing",
-      "One of the hardest flat tricks \u2014 patience"
+      "One of the hardest flat tricks — patience"
     ],
     "tags": [
       "flip",
@@ -784,7 +784,7 @@
     "year": null,
     "tips": [
       "Practice riding switch first",
-      "Everything feels backwards \u2014 be patient",
+      "Everything feels backwards — be patient",
       "Your 'weak' foot needs to learn to pop"
     ],
     "tags": [
@@ -793,5 +793,1520 @@
       "fundamental"
     ],
     "videoId": "rWIHbVpVIzg"
+  },
+  {
+    "id": "switch-kickflip",
+    "name": "Switch Kickflip",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A kickflip performed in switch stance. Requires solid switch pushing and flick control.",
+    "prerequisites": [
+      "switch-ollie",
+      "kickflip"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "flip",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "switch-heelflip",
+    "name": "Switch Heelflip",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A heelflip in switch stance. The heel flick feels unnatural at first but becomes second nature.",
+    "prerequisites": [
+      "switch-ollie",
+      "heelflip"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "flip",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-kickflip",
+    "name": "Nollie Kickflip",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "Pop from the nose and flick a kickflip. Weight distribution over the front truck is key.",
+    "prerequisites": [
+      "nollie",
+      "kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "flip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-heelflip",
+    "name": "Nollie Heelflip",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A heelflip initiated from a nollie pop. The flick goes forward off the nose-side edge.",
+    "prerequisites": [
+      "nollie",
+      "heelflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "flip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-kickflip",
+    "name": "Fakie Kickflip",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "A kickflip while riding fakie. Often considered easier than nollie or switch variants.",
+    "prerequisites": [
+      "kickflip"
+    ],
+    "stance": [
+      "Fakie"
+    ],
+    "tags": [
+      "fakie",
+      "flip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-heelflip",
+    "name": "Fakie Heelflip",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "A heelflip while rolling fakie. The pop and flick feel similar to regular but reversed.",
+    "prerequisites": [
+      "heelflip"
+    ],
+    "stance": [
+      "Fakie"
+    ],
+    "tags": [
+      "fakie",
+      "flip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "switch-pop-shove-it",
+    "name": "Switch Pop Shove-It",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A backside pop shove-it performed in switch stance.",
+    "prerequisites": [
+      "switch-ollie",
+      "pop-shove-it"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "shove-it",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-pop-shove-it",
+    "name": "Nollie Pop Shove-It",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "Popping from the nose and scooping a shove-it. A great intro to nollie tricks.",
+    "prerequisites": [
+      "nollie",
+      "pop-shove-it"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "shove-it",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-pop-shove-it",
+    "name": "Fakie Pop Shove-It",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "A pop shove-it while riding fakie. One of the easier fakie tricks to learn.",
+    "prerequisites": [
+      "pop-shove-it"
+    ],
+    "stance": [
+      "Fakie"
+    ],
+    "tags": [
+      "fakie",
+      "shove-it",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "switch-360-flip",
+    "name": "Switch 360 Flip",
+    "category": "Flatground",
+    "difficulty": 8,
+    "description": "The tre flip in switch. A gold-standard trick that separates pros from amateurs.",
+    "prerequisites": [
+      "switch-kickflip",
+      "switch-pop-shove-it"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "flip",
+      "pro"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-360-flip",
+    "name": "Nollie 360 Flip",
+    "category": "Flatground",
+    "difficulty": 7,
+    "description": "A tre flip from nollie. The scoop comes from the nose with a simultaneous kickflip.",
+    "prerequisites": [
+      "nollie-kickflip",
+      "nollie-pop-shove-it"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "flip",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-360-flip",
+    "name": "Fakie 360 Flip",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "Tre flip while rolling fakie. Many skaters find this the most natural tre flip variant.",
+    "prerequisites": [
+      "fakie-kickflip",
+      "fakie-pop-shove-it"
+    ],
+    "stance": [
+      "Fakie"
+    ],
+    "tags": [
+      "fakie",
+      "flip",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "switch-frontside-180",
+    "name": "Switch Frontside 180",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A frontside 180 in switch. Requires committing to the blind rotation.",
+    "prerequisites": [
+      "switch-ollie"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "switch-backside-180",
+    "name": "Switch Backside 180",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A backside 180 in switch stance. Wind up your shoulders and commit.",
+    "prerequisites": [
+      "switch-ollie"
+    ],
+    "stance": [
+      "Switch"
+    ],
+    "tags": [
+      "switch",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-backside-180",
+    "name": "Nollie Backside 180",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "Pop from the nose and rotate backside 180. A staple nollie trick.",
+    "prerequisites": [
+      "nollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nollie-frontside-180",
+    "name": "Nollie Frontside 180",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "A frontside 180 from a nollie pop. Great for lines and combos.",
+    "prerequisites": [
+      "nollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "nollie",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-backside-180",
+    "name": "Fakie Backside 180",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "A half-cab — one of the most fundamental fakie tricks. Named after Steve Caballero.",
+    "prerequisites": [],
+    "stance": [
+      "Fakie"
+    ],
+    "inventor": "Steve Caballero",
+    "tags": [
+      "fakie",
+      "rotation",
+      "fundamental"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fakie-frontside-180",
+    "name": "Fakie Frontside 180",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "Rolling fakie and rotating frontside 180. A must-learn for any transition skater.",
+    "prerequisites": [],
+    "stance": [
+      "Fakie"
+    ],
+    "tags": [
+      "fakie",
+      "rotation",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-tailslide",
+    "name": "Backside Tailslide",
+    "category": "Ledge",
+    "difficulty": 5,
+    "description": "Ollie and lock your tail onto the ledge while sliding backside. Keep weight centered.",
+    "prerequisites": [
+      "backside-180",
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-tailslide",
+    "name": "Frontside Tailslide",
+    "category": "Ledge",
+    "difficulty": 5,
+    "description": "Approach frontside and slide on your tail. The commitment to lean back is the hardest part.",
+    "prerequisites": [
+      "frontside-180",
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-noseslide",
+    "name": "Backside Noseslide",
+    "category": "Ledge",
+    "difficulty": 5,
+    "description": "Lock your nose onto the ledge backside. A stylish trick that looks effortless when done right.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-noseslide",
+    "name": "Frontside Noseslide",
+    "category": "Ledge",
+    "difficulty": 4,
+    "description": "Approach frontside and slide on the nose. One of the first slide tricks many skaters learn.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-lipslide",
+    "name": "Backside Lipslide",
+    "category": "Ledge",
+    "difficulty": 6,
+    "description": "Ollie over the ledge backside and slide on the middle of the board. Requires full commitment.",
+    "prerequisites": [
+      "backside-boardslide"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-lipslide",
+    "name": "Frontside Lipslide",
+    "category": "Ledge",
+    "difficulty": 6,
+    "description": "The frontside version of a lipslide — ollie over and slide. A tech ledge staple.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "hurricane-grind",
+    "name": "Hurricane Grind",
+    "category": "Ledge",
+    "difficulty": 7,
+    "description": "Frontside 180 into a backside feeble grind position. A trick that commands respect.",
+    "prerequisites": [
+      "frontside-180",
+      "feeble-grind"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "grind",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "willy-grind",
+    "name": "Willy Grind",
+    "category": "Ledge",
+    "difficulty": 5,
+    "description": "Nose version of a 5-0 — grinding on just the front truck. Requires precise balance.",
+    "prerequisites": [
+      "nosegrind"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "grind",
+      "ledge",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "overcrook",
+    "name": "Overcrook",
+    "category": "Ledge",
+    "difficulty": 7,
+    "description": "An exaggerated crooked grind where the nose extends well past the ledge. Highly stylish.",
+    "prerequisites": [
+      "crooked-grind"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "grind",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "salad-grind",
+    "name": "Salad Grind",
+    "category": "Ledge",
+    "difficulty": 6,
+    "description": "A varial 5-0 — the back truck grinds while the board is angled. Named after salad days.",
+    "prerequisites": [
+      "5-0-grind"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "grind",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "suski-grind",
+    "name": "Suski Grind",
+    "category": "Ledge",
+    "difficulty": 7,
+    "description": "A noseblunt slide on a ledge. The nose hooks over while you slide. Named after Aaron Suski.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Aaron Suski",
+    "tags": [
+      "slide",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "bluntslide",
+    "name": "Bluntslide",
+    "category": "Ledge",
+    "difficulty": 7,
+    "description": "Ollie 180 and slide on the tail with the board perpendicular. A commitment-heavy trick.",
+    "prerequisites": [
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "nosebluntslide",
+    "name": "Nosebluntslide",
+    "category": "Ledge",
+    "difficulty": 7,
+    "description": "The nose version of a bluntslide. Ollie, rotate, and lock the nose past the ledge.",
+    "prerequisites": [
+      "frontside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "slide",
+      "ledge",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-air",
+    "name": "Backside Air",
+    "category": "Transition",
+    "difficulty": 5,
+    "description": "Grab your board and launch out of the ramp backside. The quintessential vert trick.",
+    "prerequisites": [
+      "drop-in",
+      "axle-stall"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "air",
+      "grab"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-air",
+    "name": "Frontside Air",
+    "category": "Transition",
+    "difficulty": 6,
+    "description": "An aerial launched frontside out of the coping. Christian Hosoi made this iconic.",
+    "prerequisites": [
+      "drop-in"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Christian Hosoi",
+    "tags": [
+      "vert",
+      "air",
+      "grab"
+    ],
+    "tips": []
+  },
+  {
+    "id": "mctwist",
+    "name": "McTwist",
+    "category": "Transition",
+    "difficulty": 9,
+    "description": "A 540° backside aerial with a mute grab. Invented by Mike McGill in 1984.",
+    "prerequisites": [
+      "backside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Mike McGill",
+    "year": 1984,
+    "tags": [
+      "vert",
+      "rotation",
+      "pro"
+    ],
+    "tips": []
+  },
+  {
+    "id": "madonna",
+    "name": "Madonna",
+    "category": "Transition",
+    "difficulty": 7,
+    "description": "A one-footed lien air where the front foot is kicked out. Named after the pop star.",
+    "prerequisites": [
+      "frontside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "grab",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "stalefish",
+    "name": "Stalefish",
+    "category": "Transition",
+    "difficulty": 5,
+    "description": "A backside air with a grab between the heels on the backside rail behind the back leg.",
+    "prerequisites": [
+      "backside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Tony Hawk",
+    "tags": [
+      "vert",
+      "grab",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "melon",
+    "name": "Melon Grab",
+    "category": "Transition",
+    "difficulty": 4,
+    "description": "Backside grab between the heels on the frontside of the board. A classic transition grab.",
+    "prerequisites": [
+      "backside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "grab",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "indy-grab",
+    "name": "Indy Grab",
+    "category": "Transition",
+    "difficulty": 4,
+    "description": "Grabbing the toeside rail between your feet with the back hand during a frontside air.",
+    "prerequisites": [
+      "frontside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "grab",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "method-air",
+    "name": "Method Air",
+    "category": "Transition",
+    "difficulty": 5,
+    "description": "A backside air with a melon grab while tweaking the board behind you. Peak style.",
+    "prerequisites": [
+      "melon"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "grab",
+      "style"
+    ],
+    "tips": []
+  },
+  {
+    "id": "judo-air",
+    "name": "Judo Air",
+    "category": "Transition",
+    "difficulty": 6,
+    "description": "A frontside air where the front foot kicks off and extends forward. Martial arts on a ramp.",
+    "prerequisites": [
+      "frontside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "grab",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-disaster",
+    "name": "Backside Disaster",
+    "category": "Transition",
+    "difficulty": 5,
+    "description": "Approach backside, air above the coping, 180, and re-enter the ramp tail-first on the coping.",
+    "prerequisites": [
+      "backside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "lip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-disaster",
+    "name": "Frontside Disaster",
+    "category": "Transition",
+    "difficulty": 5,
+    "description": "Frontside version — air, 180, and come back in. A staple mini-ramp trick.",
+    "prerequisites": [
+      "frontside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "lip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "bs-boneless",
+    "name": "Boneless",
+    "category": "Transition",
+    "difficulty": 3,
+    "description": "Plant your front foot on the ground, grab the board, and jump back on. Old-school magic.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "old-school",
+      "grab",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "andrecht",
+    "name": "Andrecht (Handplant)",
+    "category": "Transition",
+    "difficulty": 7,
+    "description": "A backside handplant invert on the coping. One hand on coping, one grabbing the board.",
+    "prerequisites": [
+      "backside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "invert",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "eggplant",
+    "name": "Eggplant",
+    "category": "Transition",
+    "difficulty": 7,
+    "description": "A frontside handplant invert. Plant your hand on the coping and invert with a grab.",
+    "prerequisites": [
+      "frontside-air"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "vert",
+      "invert",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "backside-360",
+    "name": "Backside 360",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A full 360° rotation backside while airborne. Wind up hard and commit.",
+    "prerequisites": [
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "rotation",
+      "advanced",
+      "flatground"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-360",
+    "name": "Frontside 360",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "Full 360 rotation frontside. Harder than backside for most skaters.",
+    "prerequisites": [
+      "frontside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "rotation",
+      "advanced",
+      "flatground"
+    ],
+    "tips": []
+  },
+  {
+    "id": "kickflip-frontside-180",
+    "name": "Kickflip Frontside 180",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "Combine a kickflip with a frontside 180 rotation. Timing the catch mid-rotation is key.",
+    "prerequisites": [
+      "kickflip",
+      "frontside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "kickflip-backside-180",
+    "name": "Kickflip Backside 180",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A kickflip with a backside 180. Popular in lines and as a ledge trick.",
+    "prerequisites": [
+      "kickflip",
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "rotation",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "double-kickflip",
+    "name": "Double Kickflip",
+    "category": "Flatground",
+    "difficulty": 6,
+    "description": "A kickflip that rotates twice. Requires a harder flick and higher pop.",
+    "prerequisites": [
+      "kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "advanced",
+      "flatground"
+    ],
+    "tips": []
+  },
+  {
+    "id": "triple-kickflip",
+    "name": "Triple Kickflip",
+    "category": "Flatground",
+    "difficulty": 8,
+    "description": "Three full rotations on a kickflip. Extremely difficult and requires perfect technique.",
+    "prerequisites": [
+      "double-kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "pro",
+      "flatground"
+    ],
+    "tips": []
+  },
+  {
+    "id": "double-heelflip",
+    "name": "Double Heelflip",
+    "category": "Flatground",
+    "difficulty": 6,
+    "description": "A heelflip with two rotations. Scoop hard with the heel.",
+    "prerequisites": [
+      "heelflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "advanced",
+      "flatground"
+    ],
+    "tips": []
+  },
+  {
+    "id": "pressure-flip",
+    "name": "Pressure Flip",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A no-pop flip trick using foot pressure to spin the board. The board flips underfoot without an ollie.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "tech",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "hospital-flip",
+    "name": "Hospital Flip",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A half-kickflip caught upside down, then flipped back with the back foot. A true tech trick.",
+    "prerequisites": [
+      "kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "tech",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "dolphin-flip",
+    "name": "Dolphin Flip",
+    "category": "Flatground",
+    "difficulty": 6,
+    "description": "A forward-flipping varial flip — the board does a forward flip with a shove-it. Rare and stylish.",
+    "prerequisites": [
+      "varial-kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "tech",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "gazelle-flip",
+    "name": "Gazelle Flip",
+    "category": "Flatground",
+    "difficulty": 8,
+    "description": "A 360 body rotation combined with a 360 flip. One of the hardest flatground tricks.",
+    "prerequisites": [
+      "360-flip",
+      "backside-360"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "rotation",
+      "pro"
+    ],
+    "tips": []
+  },
+  {
+    "id": "alpha-flip",
+    "name": "Alpha Flip",
+    "category": "Flatground",
+    "difficulty": 7,
+    "description": "A heelflip that flips vertically forward between your legs. Mind-bending when done right.",
+    "prerequisites": [
+      "heelflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "tech",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "casper-flip",
+    "name": "Casper Flip",
+    "category": "Flatground",
+    "difficulty": 6,
+    "description": "Half-kickflip the board, catch it upside down on your back foot, then flip it back.",
+    "prerequisites": [
+      "kickflip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "tech",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "bigspin",
+    "name": "Bigspin",
+    "category": "Flatground",
+    "difficulty": 4,
+    "description": "A 360 shove-it combined with a 180 body rotation. Smooth and flowy when done right.",
+    "prerequisites": [
+      "pop-shove-it",
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "rotation",
+      "shove-it",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "frontside-bigspin",
+    "name": "Frontside Bigspin",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "A frontside 360 shove-it with a frontside 180 body rotation.",
+    "prerequisites": [
+      "frontside-pop-shove-it",
+      "frontside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "rotation",
+      "shove-it",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "biggerflip",
+    "name": "Biggerflip",
+    "category": "Flatground",
+    "difficulty": 8,
+    "description": "A bigspin combined with a kickflip — 360 shove-it + kickflip + 180 body rotation.",
+    "prerequisites": [
+      "bigspin",
+      "360-flip"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "flip",
+      "rotation",
+      "pro"
+    ],
+    "tips": []
+  },
+  {
+    "id": "ghetto-bird",
+    "name": "Ghetto Bird",
+    "category": "Flatground",
+    "difficulty": 8,
+    "description": "A hardflip late backside 180. Invented by Kareem Campbell.",
+    "prerequisites": [
+      "hardflip",
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Kareem Campbell",
+    "tags": [
+      "flip",
+      "rotation",
+      "pro"
+    ],
+    "tips": []
+  },
+  {
+    "id": "primo-slide",
+    "name": "Primo Slide",
+    "category": "Freestyle",
+    "difficulty": 5,
+    "description": "Standing on the board while it's on its side (wheels facing out) and sliding. A freestyle classic.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "freestyle",
+      "tech",
+      "balance"
+    ],
+    "tips": []
+  },
+  {
+    "id": "casper-stall",
+    "name": "Casper Stall",
+    "category": "Freestyle",
+    "difficulty": 4,
+    "description": "Flip the board half over and balance on it upside-down with one foot under the deck.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "freestyle",
+      "balance",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "fingerflip",
+    "name": "Fingerflip",
+    "category": "Freestyle",
+    "difficulty": 3,
+    "description": "Use your hand to flip the board while jumping. An old-school trick that's making a comeback.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "old-school",
+      "freestyle",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "no-comply",
+    "name": "No Comply",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "Step off with your front foot and pop the board with your back foot to get airborne. Street classic.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "old-school",
+      "street",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "strawberry-milkshake",
+    "name": "Strawberry Milkshake",
+    "category": "Flatground",
+    "difficulty": 7,
+    "description": "A no-comply impossible. Step off, scoop the board around your back foot, and land.",
+    "prerequisites": [
+      "no-comply",
+      "impossible"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "tech",
+      "street",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "caveman",
+    "name": "Caveman",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "Hold the board, jump, and land on it mid-air. The oldest trick in the book.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "old-school",
+      "beginner",
+      "fundamental"
+    ],
+    "tips": []
+  },
+  {
+    "id": "beanplant",
+    "name": "Beanplant",
+    "category": "Transition",
+    "difficulty": 4,
+    "description": "A boneless with a grab — plant your front foot, grab indy, and boost off the coping.",
+    "prerequisites": [
+      "bs-boneless"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "old-school",
+      "transition",
+      "grab"
+    ],
+    "tips": []
+  },
+  {
+    "id": "pogo",
+    "name": "Pogo",
+    "category": "Freestyle",
+    "difficulty": 5,
+    "description": "Balance on the tail with the board vertical and hop around. Pure freestyle wizardry.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "freestyle",
+      "balance",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "handstand",
+    "name": "Handstand Flip",
+    "category": "Freestyle",
+    "difficulty": 8,
+    "description": "Perform a handstand on the board and flip it with your hands. The ultimate freestyle flex.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "freestyle",
+      "pro",
+      "balance"
+    ],
+    "tips": []
+  },
+  {
+    "id": "rail-stand",
+    "name": "Railstand (Primo)",
+    "category": "Freestyle",
+    "difficulty": 3,
+    "description": "Stand on the side of the board with it balanced on its edge. The foundation for primo tricks.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "freestyle",
+      "balance",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "longboard-slide",
+    "name": "Coleman Slide",
+    "category": "Longboard",
+    "difficulty": 3,
+    "description": "A hands-down heelside slide. The fundamental stopping/speed control technique for downhill.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Cliff Coleman",
+    "tags": [
+      "longboard",
+      "slide",
+      "fundamental"
+    ],
+    "tips": []
+  },
+  {
+    "id": "toeside-slide",
+    "name": "Toeside Slide",
+    "category": "Longboard",
+    "difficulty": 4,
+    "description": "Sliding with your toes facing downhill. Harder than heelside but essential for downhill.",
+    "prerequisites": [
+      "longboard-slide"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "slide",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "longboard-dancing-cross-step",
+    "name": "Cross Step",
+    "category": "Longboard",
+    "difficulty": 3,
+    "description": "Walking up and down the board while rolling. The foundation of longboard dancing.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "dancing",
+      "beginner"
+    ],
+    "tips": []
+  },
+  {
+    "id": "peter-pan",
+    "name": "Peter Pan",
+    "category": "Longboard",
+    "difficulty": 4,
+    "description": "A continuous cross-step that flows front-to-back repeatedly. Graceful longboard dancing move.",
+    "prerequisites": [
+      "longboard-dancing-cross-step"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "dancing",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "longboard-ghostride",
+    "name": "Ghostride Kickflip",
+    "category": "Longboard",
+    "difficulty": 5,
+    "description": "Step off the board and flip it with your foot while it rolls, then hop back on.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "flip",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "longboard-tiger-claw",
+    "name": "Tiger Claw",
+    "category": "Longboard",
+    "difficulty": 5,
+    "description": "Grab the board with your hand, jump, flip it 360° in the air, and land back on it.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "grab",
+      "intermediate"
+    ],
+    "tips": []
+  },
+  {
+    "id": "stand-up-slide",
+    "name": "Stand-Up Slide",
+    "category": "Longboard",
+    "difficulty": 6,
+    "description": "A slide performed without putting hands down. Requires excellent balance and commitment.",
+    "prerequisites": [
+      "longboard-slide"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "slide",
+      "advanced"
+    ],
+    "tips": []
+  },
+  {
+    "id": "pivot",
+    "name": "Pivot",
+    "category": "Longboard",
+    "difficulty": 3,
+    "description": "Shifting your weight to spin the board 180° on the back truck. Basic carving maneuver.",
+    "prerequisites": [],
+    "stance": [
+      "Regular"
+    ],
+    "tags": [
+      "longboard",
+      "fundamental",
+      "beginner"
+    ],
+    "tips": []
   }
 ]

@@ -2308,5 +2308,159 @@
       "beginner"
     ],
     "tips": []
+  },
+  {
+    "id": "pop-shove-it",
+    "name": "Pop Shove-It",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "An ollie where the board rotates 180° backside (frontside shove goes the other way) beneath your feet without flipping.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": null,
+    "year": null,
+    "tips": [
+      "Scoop the tail back with your back foot",
+      "Keep your shoulders square — don't turn with the board",
+      "Jump straight up and let the board spin underneath"
+    ],
+    "tags": [
+      "fundamental",
+      "flatground",
+      "rotation"
+    ]
+  },
+  {
+    "id": "backside-180",
+    "name": "Backside 180",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "An ollie with a 180° backside rotation of both body and board. You turn so your back faces the direction of travel mid-spin.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": null,
+    "year": null,
+    "tips": [
+      "Wind up your shoulders before popping",
+      "Lead with your head and shoulders — the board follows",
+      "Commit to the full 180 or you'll land sideways"
+    ],
+    "tags": [
+      "fundamental",
+      "flatground",
+      "rotation"
+    ]
+  },
+  {
+    "id": "frontside-180",
+    "name": "Frontside 180",
+    "category": "Flatground",
+    "difficulty": 2,
+    "description": "An ollie with a 180° frontside rotation. You turn so your chest faces forward mid-spin, landing switch.",
+    "prerequisites": [
+      "ollie"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": null,
+    "year": null,
+    "tips": [
+      "Open your shoulders frontside before you pop",
+      "Look over your leading shoulder to guide the rotation",
+      "Keep the board under you — don't let it drift"
+    ],
+    "tags": [
+      "fundamental",
+      "flatground",
+      "rotation"
+    ]
+  },
+  {
+    "id": "backside-boardslide",
+    "name": "Backside Boardslide",
+    "category": "Grind",
+    "difficulty": 3,
+    "description": "Ollie onto a rail or ledge backside, sliding perpendicular with the middle of your board across the obstacle.",
+    "prerequisites": [
+      "ollie",
+      "backside-180"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": null,
+    "year": null,
+    "tips": [
+      "Approach at a slight angle, not fully parallel",
+      "Turn your shoulders 90° and commit to getting over the rail",
+      "Keep your weight centered to avoid slipping out"
+    ],
+    "tags": [
+      "grind",
+      "rail",
+      "ledge",
+      "street"
+    ]
+  },
+  {
+    "id": "frontside-pop-shove-it",
+    "name": "Frontside Pop Shove-It",
+    "category": "Flatground",
+    "difficulty": 3,
+    "description": "A pop shove-it where the board spins 180° frontside (toe-edge direction) beneath you.",
+    "prerequisites": [
+      "ollie",
+      "pop-shove-it"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": null,
+    "year": null,
+    "tips": [
+      "Scoop the tail forward with your toes",
+      "It's harder than a backside shove — commit to the scoop",
+      "Keep your front foot light to let the board spin"
+    ],
+    "tags": [
+      "flatground",
+      "rotation"
+    ]
+  },
+  {
+    "id": "360-flip",
+    "name": "360 Flip",
+    "category": "Flatground",
+    "difficulty": 5,
+    "description": "Also known as a tre flip. Combines a kickflip with a 360° backside pop shove-it — the board flips and spins simultaneously.",
+    "prerequisites": [
+      "kickflip",
+      "pop-shove-it"
+    ],
+    "stance": [
+      "Regular"
+    ],
+    "inventor": "Rodney Mullen",
+    "year": 1983,
+    "tips": [
+      "Back foot scoops hard while front foot flicks",
+      "It's one fluid motion — don't try to do two tricks at once",
+      "Let the board do a full rotation before catching"
+    ],
+    "tags": [
+      "flip",
+      "rotation",
+      "advanced",
+      "street"
+    ]
   }
 ]
